@@ -20,3 +20,9 @@
 ## tasks
 
 
+------
+
+### other links
+
+- [Workshop Bash](http://workshop-bash.com/)
+- [Shell Programming slides](http://www.udel.edu/it/learnit/course/class_materials/Unix_Workshop_Series/Shell-Programming-UNIX.pdf)
