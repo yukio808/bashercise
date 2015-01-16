@@ -2,7 +2,7 @@
 
 > Bashercise is a dance-based group fitness program.
 
--- *Wikipedia*
+-- *Wikipedia* [source](https://en.wikipedia.org/wiki/Jazzercise)
 
 ## setup
 
