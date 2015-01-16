@@ -109,6 +109,22 @@ and play with it:
 
 To prove it worked, run `bats tests/path.bats`.
 
+##### gotcha
+
+Did the test pass?
+
+.
+.
+.
+
+It shouldn't have. Variables you set as above are *only* available to the
+shell. For variables in the shell to be available to *other* processes (like
+commands that you call), you have to `export` them:
+
+    export MYPATH
+
+Now test it again!
+
 #### Check for stray processes
 
 Did you leave `node` running in a terminal and forget about it? If so, you can
