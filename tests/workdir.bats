@@ -16,8 +16,7 @@
 }
 
 @test "file copies exist within subdirectory 1" {
-    result="$(ls mywork/dir1)"
-    [ "$result" -eq "empty1 empty2" ]
+    [ -f mywork/dir1/empty1 ] && [ -f mywork/dir1/empty2 ]
 }
 
 @test "symlink pointing to empty1 exists" {
@@ -36,7 +35,8 @@
     [ "$result" -eq "dir1/" ] # we should only see dir1
 }
 
-@test ".gitignore exists in dir1 and ignores node_modules" {
+@test ".gitignore exists in dir1 and ignores node_modules in first line" {
     result="#(ls -a dir1 | grep .gitignore)"
-    [ ${#result} > 0 ]
+    ignorecontents="$(cat .gitignore | sed -n 1p)"
+    [ "$ignorecontents" -eq "node_modules" ]
 }
