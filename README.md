@@ -60,7 +60,9 @@ piped output)
   - [ ] Move directories into other directories: `dir2` into `mywork/dir2`
   - [ ] Symlink to a directory: `sym1` to `empty1`
   - [ ] Delete a directory: `dir3`
-  - [ ] Add a `.gitignore` file to a directory
+  - [ ] Add a `.gitignore` file to a directory and ignore `node_modules`
+
+Test yourself by running `bats tests/workdir.bats`.
 
 #### What's in my `$PATH`?
 
