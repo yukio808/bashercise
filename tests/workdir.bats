@@ -19,10 +19,10 @@
 }
 
 @test "symlink pointing to empty1 exists" {
-    result="$(ls -ltra | grep -e '->' | sed -n 1p)" # step 1, get first link
+    result="$(ls -l | grep -e '->' | sed -n 1p)" # step 1, get first link
     # [ ${#result} > 0 ] # length of result greater than zero
     # step 2, check source and dest names
-    tgtstr="sym1 -> "$(pwd)"empty1" # gross string concatentation
+    tgtstr="sym1 -> empty1"
     cutstrlen=${result/$tgtstr}
     cutstrlen=${#cutstrlen} # god I suck at bash
     [ $cutstrlen -lt ${#result} ] # cutting out the target string from the
