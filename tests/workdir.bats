@@ -4,13 +4,11 @@
     [ -d mywork ]
 }
 
-@test "empty files created" {
-    result="$(ls empty*)"
+@test "empty files created in pwd" {
 		[ -f empty1 ] && [ -f empty2 ]
 }
 
 @test "mywork subdirectories created" {
-    result="$(ls -d mywork/*/)"
     [ -d mywork/dir1 ] && [ -d mywork/dir2 ]
 }
 
