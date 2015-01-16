@@ -76,7 +76,7 @@ Perform the following steps:
 
 - [ ] Create a `mywork` folder
 - [ ] Prove you can manage files and folders inside it
-  - [ ] Make empty files: `mywork/empty1`, `mywork/empty2`
+  - [ ] Make empty files: `empty1`, `empty2`
   - [ ] Make directories: `dir1`, `dir2`, `dir3`
   - [ ] Copy a directory: `dir1` to `mywork/dir1`
   - [ ] Copy files into directories: `empty1` and `empty2` into `mywork/dir1`
