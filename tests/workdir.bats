@@ -30,12 +30,11 @@
 }
 
 @test "dir2 doesn't exist (deleted), dir1 remains" {
-    result="$(ls -d */)"
-    [ "$result" -eq "dir1/" ] # we should only see dir1
+    [ ! -d dir2 ] && [ -d dir1 ] # we should only see dir1
 }
 
 @test ".gitignore exists in dir1 and ignores node_modules in first line" {
-    result="#(ls -a dir1 | grep .gitignore)"
-    ignorecontents="$(cat .gitignore | sed -n 1p)"
-    [ "$ignorecontents" -eq "node_modules" ]
+    # result="$(ls -a dir1 | grep .gitignore)"
+    ignorecontents="$(cat dir1/.gitignore | sed -n 1p)"
+    [ "$ignorecontents" = "node_modules" ]
 }
