@@ -32,9 +32,12 @@ Run each of these commands and understand their output:
   - [ ] Find out your current user (with a command)
   - [ ] Get current location (hint: "present working directory")
 	- [ ] And home directory (hint: what happens if you type `cd` with no args?)
-  - [ ] See how these change under `sudo` and `sudo su`
+  - [ ] See how these change under `sudo`...
       - [ ] Current user
       - [ ] Home directory `~`
+  - [ ] ...and `sudo su`
+      - [ ] Current user
+      - [ ] Home directory
 - [ ] Move around, see the sights
   - [ ] Home directory
   - [ ] Filesystem root
