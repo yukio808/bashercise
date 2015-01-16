@@ -1,18 +1,17 @@
 #!/usr/bin/env bats
 
 @test "mywork folder exists" {
-    result="$(ls -d mywork)"
-    [ "$result" -eq "mywork" ]
+    [ -d mywork ]
 }
 
 @test "empty files created" {
     result="$(ls empty*)"
-		[ "$result" -eq "empty1 empty2" ]
+		[ -f empty1 ] && [ -f empty2 ]
 }
 
 @test "mywork subdirectories created" {
     result="$(ls -d mywork/*/)"
-    [ "$result" -eq "mywork/dir1/ mywork/dir2/" ]
+    [ -d mywork/dir1 ] && [ -d mywork/dir2 ]
 }
 
 @test "file copies exist within subdirectory 1" {
