@@ -58,7 +58,7 @@ piped output)
   - [ ] Copy files into directories
   - [ ] Copy a directory
   - [ ] Move directories into other directories
-  - [ ] Symlink one directory to another
+  - [ ] Symlink to a directory (with *absolute path*)
   - [ ] Delete a directory
   - [ ] Add a `.gitignore` file to a directory
 

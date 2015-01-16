@@ -22,8 +22,13 @@
 
 @test "symlink pointing to empty1 exists" {
     result="$(ls -ltra | grep -e '->' | sed -n 1p)" # step 1, get first link
-    [ ${#result} > 0 ] # length of result greater than zero
+    # [ ${#result} > 0 ] # length of result greater than zero
     # step 2, check source and dest names
+    tgtstr="sym1 -> "$(pwd)"empty1" # gross string concatentation
+    cutstrlen=${result/$tgtstr}
+    cutstrlen=${#cutstrlen} # god I suck at bash
+    [ $cutstrlen -lt ${#result} ] # cutting out the target string from the
+                                  # result reduces result's length
 }
 
 @test "dir2 doesn't exist (deleted), dir1 remains" {
