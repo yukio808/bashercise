@@ -53,13 +53,13 @@ piped output)
 
 - [ ] A `mywork` folder
 - [ ] Prove you can manage files and folders inside it
-  - [ ] Make empty files
-  - [ ] Make directories
-  - [ ] Copy files into directories
-  - [ ] Copy a directory
-  - [ ] Move directories into other directories
-  - [ ] Symlink to a directory (with *absolute path*)
-  - [ ] Delete a directory
+  - [ ] Make empty files: `mywork/empty1`, `mywork/empty2`
+  - [ ] Make directories: `dir1`, `dir2`
+  - [ ] Copy a directory: `dir1` to `mywork/dir1`
+  - [ ] Copy files into directories: `empty1` and `empty2` into `mywork/dir1`
+  - [ ] Move directories into other directories: `dir2` into `mywork/dir2`
+  - [ ] Symlink to a directory: `sym1` to `empty1`
+  - [ ] Delete a directory: `dir3`
   - [ ] Add a `.gitignore` file to a directory
 
 #### What's in my `$PATH`?

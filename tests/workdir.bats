@@ -29,8 +29,8 @@
                                   # result reduces result's length
 }
 
-@test "dir2 doesn't exist (deleted), dir1 remains" {
-    [ ! -d dir2 ] && [ -d dir1 ] # we should only see dir1
+@test "dir3 doesn't exist (deleted), dir1 remains" {
+    [ ! -d dir3 ] && [ -d dir1 ] # we should only see dir1
 }
 
 @test ".gitignore exists in dir1 and ignores node_modules in first line" {
