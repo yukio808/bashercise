@@ -23,8 +23,8 @@
 
 Run each of these commands and understand their output:
 
-- [-/] Get some basic system info
-  - [-/ ] Kernel version
+- [ ] Get some basic system info
+  - [ ] Kernel version
   - [ ] Release version
 	  - OSX: `system_profiler SPSoftwareDataType`
 	  - Linux: `lsb_release -a`
@@ -74,8 +74,8 @@ right?
 
 Perform the following steps:
 
-- [-/ ] Create a `mywork` folder
-- [ -] Prove you can manage files and folders inside it
+- [ ] Create a `mywork` folder
+- [ ] Prove you can manage files and folders inside it
   - [ ] Make empty files: `empty1`, `empty2`
   - [ ] Make directories: `dir1`, `dir2`, `dir3`
   - [ ] Copy a directory into another directory: `dir1` to `mywork/`
